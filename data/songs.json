@@ -1,0 +1,23 @@
+[
+  {
+    "id": 0,
+    "title": "Birdseye Blues",
+    "artist": "Chris Haugen",
+    "file": "Birdseye Blues - Chris Haugen.mp3",
+    "image": "/assets/1.jpg"
+  },
+  {
+    "id": 1,
+    "title": "Depth Fuse",
+    "artist": "French Fuse",
+    "file": "Depth Fuse - French Fuse.mp3",
+    "image": "/assets/2.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Duh Fuse",
+    "artist": "French Fuse",
+    "file": "Duh Fuse - French Fuse.mp3",
+    "image": "/assets/3.jpg"
+  }
+]

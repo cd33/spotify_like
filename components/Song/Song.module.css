@@ -1,0 +1,13 @@
+.playing {
+    animation: playing infinite linear 10s;
+    border-radius: 50%;
+}
+
+.notPlaying {
+    border-radius: 50%;
+}
+
+@keyframes playing {
+    from { transform: rotate(0); }
+    to { transform: rotate(360deg);}
+}
