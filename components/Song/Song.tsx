@@ -1,5 +1,5 @@
 import styles from "./Song.module.css";
-import Image from "next/Image";
+import Image from "next/image";
 
 type Song = {
   id: number;
