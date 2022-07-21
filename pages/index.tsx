@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import { useState } from "react";
 import styles from "../styles/Home.module.css";
 import Song from "../components/Song/Song";
+import Audio from "../components/Audio/Audio"
 
 type Song = {
   id: number,
@@ -17,7 +18,7 @@ export async function getStaticProps() {
 
   return {
     props: {songs},
-    // revalidate: 3600,
+    revalidate: 3600,
   };
 }
 
@@ -30,13 +31,13 @@ const Home: NextPage<{ songs: Song[] }> = ({songs}) => {
       <div className={styles.songPlaying}>
         <Song song={songs[trackPlaying]} isPlaying={isPlaying} />
       </div>
-      {/* <Audio
+      <Audio
         isPlaying={isPlaying}
         setIsPlaying={setIsPlaying}
         songs={songs}
         trackPlaying={trackPlaying}
         setTrackPlaying={setTrackPlaying}
-      /> */}
+      />
     </div>
   );
 };
